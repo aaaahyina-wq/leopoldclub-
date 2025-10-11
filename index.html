@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leopold club — Море, Пальмы, Leopold</title>
+  <meta name="description" content="Отправься в увлекательное снежное приключение посреди пальм и солнца. Открой для себя мистическую сторону древней Индии и разгадай её загадки вместе с Leopold club. Присоединяйся в Telegram!" />
+  <link rel="icon" href="https://ibb.co/ns4XwWML" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Leopold club — Море, Пальмы, Leopold" />
+  <meta property="og:description" content="Отправься в увлекательное приключение посреди пальм и солнца. Открой мистическую сторону Индии вместе с Leopold club!" />
+  <meta property="og:image" content="https://ibb.co/ns4XwWML" />
+  <meta property="og:url" content="https://your-domain.example/" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leopold club — Море, Пальмы, Leopold" />
+  <meta name="twitter:description" content="Присоединяйся к Leopold club в Telegram" />
+  <meta name="twitter:image" content="https://ibb.co/ns4XwWML" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Leopold club",
+    "url": "https://your-domain.example/",
+    "logo": "https://ibb.co/ns4XwWML",
+    "sameAs": ["https://t.me/Leopold_club"],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "contact@your-domain.example"
+    }]
+  }
+  </script>
+
+  <style>
+    :root {
+      --accent: #29a8ff;
+      --accent-dark: #1d90e0;
+      --text-muted: #cfd8e3;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #fff;
+      background: #000;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Video background */
+    #bg-video {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      filter: saturate(1.05) contrast(1.02);
+      background: #000;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.6) 100%);
+      z-index: 1;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .card {
+      max-width: 900px;
+      padding: 36px;
+      background: rgba(0,0,0,0.2);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,0.08);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin: 18px 0 8px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+
+    .description {
+      color: #e3f0ff;
+      font-size: 1rem;
+      max-width: 680px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 32px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+      color: white;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s ease;
+      box-shadow: 0 8px 24px rgba(41,168,255,0.25);
+    }
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 36px rgba(41,168,255,0.35);
+    }
+
+    footer {
+      margin-top: 24px;
+      color: #9fb0c8;
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px) {
+      .card { padding: 22px; }
+      h1 { font-size: 1.5rem; }
+      .description { font-size: 0.95rem; }
+      .logo { width: 110px; height: 110px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ✅ Background video -->
+  <video id="bg-video" autoplay muted loop playsinline poster="https://ibb.co/ns4XwWML">
+    <source src="https://videos.pexels.com/video-files/4440822/4440822-sd_640_360_25fps.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <main class="wrap">
+    <section class="card">
+      <img class="logo" src="https://i.ibb.co/ns4XwWML/logo.jpg" alt="Leopold club logo" />
+      <h1>Leopold club</h1>
+      <div class="subtitle">Море, Пальмы, Leopold</div>
+
+      <p class="description">
+        Отправься в увлекательное снежное приключение посреди пальм и солнца.  
+        Открой для себя мистическую сторону древней Индии и разгадай её загадки.  
+        Вместе с Leopold club!
+      </p>
+
+      <a class="cta" href="https://t.me/Leopold_club" target="_blank" rel="noopener noreferrer">
+        🌴 Перейти в Telegram
+      </a>
+
+      <footer>
+        © 2023–2025 Leopold club • Официальная страница.  
+        <div>Мы не просим логины и пароли. Переход ведёт в официальный Telegram-канал.</div>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
