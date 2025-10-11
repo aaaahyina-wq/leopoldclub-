@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html><!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
@@ -12,10 +12,10 @@
   <link rel="canonical" href="https://leopoldclub.buzz/" />
   <meta name="robots" content="index, follow" />
 
-  <!-- favicon -->
+  <!-- favicon (прямая ссылка на файл) -->
   <link rel="icon" href="5278333877447945520_99.jpg" type="image/jpeg" />
 
-  <!-- Open Graph / social -->
+  <!-- Open Graph / social (прямые image URL) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Leopold club — Море, Пальмы, Leopold" />
   <meta property="og:description" content="Отправься в увлекательное приключение посреди пальм и солнца. Открой мистическую сторону Индии вместе с Leopold club!" />
@@ -157,4 +157,42 @@
     @media (max-width: 720px) {
       .card { padding: 22px; }
       h1 { font-size: 1.5rem; }
-      .description
+      .description { font-size: 0.95rem; }
+      .logo { width: 110px; height: 110px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ✅ Background video -->
+  <video id="bg-video" autoplay muted loop playsinline poster="5278333877447945520_99.jpg">
+    <source src="https://videos.pexels.com/video-files/4440822/4440822-sd_640_360_25fps.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <main class="wrap">
+    <section class="card">
+      <img class="logo" src="5278333877447945520_99.jpg" alt="Leopold club logo" />
+      <h1>Leopold club</h1>
+      <div class="subtitle">Море, Пальмы, Leopold</div>
+
+      <p class="description">
+        Отправься в увлекательное снежное приключение посреди пальм и солнца.  
+        Открой для себя мистическую сторону древней Индии и разгадай её загадки.  
+        Вместе с Leopold club!
+      </p>
+
+      <a class="cta" href="https://t.me/Leopold_club" target="_blank" rel="noopener noreferrer">
+        🌴 Перейти в Telegram
+      </a>
+
+      <footer>
+        © 2023–2025 Leopold club • Официальная страница.  
+        <div>Мы не просим логины и пароли. Переход ведёт в официальный Telegram-канал.</div>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
