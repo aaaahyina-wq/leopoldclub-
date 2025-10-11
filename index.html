@@ -163,21 +163,18 @@
   </style>
 </head>
 <body>
-<!-- ✅ Background video -->
-<video 
-  id="bg-video" 
-  autoplay 
-  muted 
-  loop 
-  playsinline 
-  webkit-playsinline 
-  preload="auto" 
-  poster="4440822-hd_1920_1080_25fps.mp4"
-  style="pointer-events:none;"
->
-  <source src="4440822-hd_1920_1080_25fps.mp4" type="video/mp4" />
-</video>
+<!-- ✅ Background gif -->
+<div id="bg-gif" style="
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: url('твоё_имя_файла.gif') center/cover no-repeat;
+  z-index: 0;
+  filter: saturate(1.05) contrast(1.02);
+"></div>
 <div class="overlay"></div>
+>
 
   <main class="wrap">
     <section class="card">
@@ -203,6 +200,7 @@
   </main>
 </body>
 </html>
+
 
 
 
